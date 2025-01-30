@@ -1,33 +1,33 @@
-# libgdx-template
+# Projet de base libGDX
 
-A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+Un projet [libGDX](https://libgdx.com/) généré avec [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
 
-This project was generated with a template including simple application launchers and an `ApplicationAdapter` extension that draws libGDX logo.
+Ce projet a été généré avec un modèle incluant des lanceurs d'applications simples et une extension `ApplicationAdapter` qui dessine le logo de libGDX.
 
-## Platforms
+## Plateformes
 
-- `core`: Main module with the application logic shared by all platforms.
-- `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
+- `core` : Module principal contenant la logique de l'application partagée par toutes les plateformes.
+- `lwjgl3` : Plateforme principale pour le bureau utilisant LWJGL3 ; était appelé 'desktop' dans les documents plus anciens.
 
 ## Gradle
 
-This project uses [Gradle](https://gradle.org/) to manage dependencies.
-The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
-Useful Gradle tasks and flags:
+Ce projet utilise [Gradle](https://gradle.org/) pour gérer les dépendances.
+Le wrapper Gradle est inclus, vous pouvez donc exécuter les tâches Gradle en utilisant les commandes `gradlew.bat` ou `./gradlew`.
+Tâches et options utiles de Gradle :
 
-- `--continue`: when using this flag, errors will not stop the tasks from running.
-- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
-- `--offline`: when using this flag, cached dependency archives will be used.
-- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
-- `build`: builds sources and archives of every project.
-- `cleanEclipse`: removes Eclipse project data.
-- `cleanIdea`: removes IntelliJ project data.
-- `clean`: removes `build` folders, which store compiled classes and built archives.
-- `eclipse`: generates Eclipse project data.
-- `idea`: generates IntelliJ project data.
-- `lwjgl3:jar`: builds application's runnable jar, which can be found at `lwjgl3/build/libs`.
-- `lwjgl3:run`: starts the application.
-- `test`: runs unit tests (if any).
+- `--continue` : avec cette option, les erreurs n'arrêteront pas l'exécution des tâches.
+- `--daemon` : grâce à cette option, le daemon Gradle sera utilisé pour exécuter les tâches choisies.
+- `--offline` : avec cette option, les archives de dépendances mises en cache seront utilisées.
+- `--refresh-dependencies` : cette option force la validation de toutes les dépendances. Utile pour les versions snapshot.
+- `build` : compile les sources et crée des archives pour chaque projet.
+- `cleanEclipse` : supprime les données de projet Eclipse.
+- `cleanIdea` : supprime les données de projet IntelliJ.
+- `clean` : supprime les dossiers `build`, qui contiennent les classes compilées et les archives créées.
+- `eclipse` : génère les données de projet Eclipse.
+- `idea` : génère les données de projet IntelliJ.
+- `lwjgl3:jar` : construit le jar exécutable de l'application, que vous pouvez trouver dans `lwjgl3/build/libs`.
+- `lwjgl3:run` : démarre l'application.
+- `test` : exécute les tests unitaires (le cas échéant).
 
-Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
-For example, `core:clean` removes `build` folder only from the `core` project.
+Notez que la plupart des tâches qui ne sont pas spécifiques à un projet unique peuvent être exécutées avec le préfixe `name:`, où `name` doit être remplacé par l'ID d'un projet spécifique.
+Par exemple, `core:clean` supprime le dossier `build` uniquement du projet `core`.
